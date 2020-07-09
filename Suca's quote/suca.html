@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Suca's Quotes</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Suca's Quote</h1>
+      <div class="suca">
+        <img class="img1" src="public/image/suca1.jpeg" />
+        <p>Quote of the Day!</p>
+      </div>
+    </div>
+    <button
+      class="download-button btn btn-lg brn-light"
+      type="submit"
+      onClick="refreshPage()"
+    >
+      Another Quote
+    </button>
+
+    <script>
+      var randomNumber1 = Math.floor(Math.random() * 7) + 1;
+
+      var randomSucaImage = 'suca' + randomNumber1 + '.jpeg';
+
+      var randomImageSource = 'image/' + randomSucaImage;
+
+      var image1 = document.querySelectorAll('img')[0];
+
+      image1.setAttribute('src', randomImageSource);
+
+      if (randomNumber1 === 1) {
+        document.querySelector('p').innerHTML =
+          'Don’t downgrade your dreams to fit your present reality. Upgrade your attitude, discipline and skills to match your destiny.';
+      } else if (randomNumber1 === 2) {
+        document.querySelector('p').innerHTML =
+          'We all have the same 24 hours a day. The only difference is how we spend those hours. If it doesn’t make you better, bring you happiness, or bring you closer to your goals then it’s not worth your time.';
+      } else if (randomNumber1 === 3) {
+        document.querySelector('p').innerHTML =
+          'People are not lazy. They simply have goals that do not inspire them.';
+      } else if (randomNumber1 === 4) {
+        document.querySelector('p').innerHTML =
+          'If you try and fail, Congratulations!. Most people won’t even try.';
+      } else if (randomNumber1 === 5) {
+        document.querySelector('p').innerHTML =
+          'We are not in competition with anyone but ourselves.';
+      } else if (randomNumber1 === 6) {
+        document.querySelector('p').innerHTML =
+          'Don’t compare yourself with anyone in this world! If you do so, you are insulting yourself.';
+      } else if (randomNumber1 === 7) {
+        document.querySelector('p').innerHTML =
+          'There is “Hell” in Hello, “over” in lover, “good” in goodbye, and “lie” in believe. You decide what you read.';
+      } else {
+        document.querySelector('p').innerHTML =
+          'Eat well, read books, study yourself, expand your mind, do better and get better. Last but not least, remember you are your greatest investment.';
+      }
+
+      function refreshPage() {
+        window.location.reload(false);
+      }
+    </script>
+  </body>
+
+  <footer>
+    Made with ♥️ by Sucayono
+  </footer>
+</html>

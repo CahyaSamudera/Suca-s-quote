@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.suca {
+  text-align: center;
+  display: inline-block;
+  padding: 1% 1%;
+}
+.img1,
+.img2 {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+}
+
+body {
+  background-image: url('image/tree7.jpg');
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 4rem;
+  color: #4ecca3;
+}
+
+p {
+  font-size: 2rem;
+  color: #f4eeff;
+  font-family: 'Lobster', cursive;
+}
+
+img {
+  width: 70%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #faf4f4;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+}
